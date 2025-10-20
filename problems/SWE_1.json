@@ -1,0 +1,19 @@
+{
+  "repo": "pydicom/pydicom",
+  "instance_id": "pydicom__pydicom-900",
+  "base_commit": "3746878d8edf1cbda6fbcf35eec69f9ba79301ca",
+  "patch": "diff --git a/pydicom/dataelem.py b/pydicom/dataelem.py\n--- a/pydicom/dataelem.py\n+++ b/pydicom/dataelem.py\n@@ -165,6 +165,17 @@ def __init__(self,...",
+  "test_patch": "diff --git a/pydicom/tests/test_dataelem.py b/pydicom/tests/test_dataelem.py\n--- a/pydicom/tests/test_dataelem.py\n+++ b/pydicom/tests/test_dataelem.py\n@@ -351,6 +352,51 @@ def test_private_repeater_tag(self):...",
+  "problem_statement": "can open my dicom, error in re.match('^ISO[^_]IR', encoding)...",
+  "hints_text": "The traceback is not really conclusive...",
+  "created_at": "2019-07-26T20:06:47Z",
+  "version": "1.3",
+  "FAIL_TO_PASS": [
+    "pydicom/tests/test_dataelem.py::TestDataElement::test_known_tags_with_UN_VR"
+  ],
+  "PASS_TO_PASS": [
+    "pydicom/tests/test_dataelem.py::TestDataElement::test_VM_1",
+    "pydicom/tests/test_dataelem.py::TestDataElement::test_VM_2"
+  ],
+  "environment_setup_commit": "7241f5d9db0de589b230bb84212fbb643a7c86c3"
+}

@@ -1,0 +1,29 @@
+{
+  "task_id": 519,
+  "text": "Write a function to calculate volume of a tetrahedron.",
+  "entry_point": "volume_tetrahedron",
+  "code": "import math\n\ndef volume_tetrahedron(num):\n    volume = (num ** 3 / (6 * math.sqrt(2)))\n    return round(volume, 2)",
+  "test_setup_code": "",
+  "test_list": [
+    "assert volume_tetrahedron(10) == 117.85",
+    "assert volume_tetrahedron(15) == 397.75",
+    "assert volume_tetrahedron(20) == 942.81",
+    "assert volume_tetrahedron(7) == 40.42",
+    "assert volume_tetrahedron(5) == 14.73",
+    "assert volume_tetrahedron(11) == 156.86",
+    "assert volume_tetrahedron(13) == 258.92",
+    "assert volume_tetrahedron(6) == 25.46",
+    "assert volume_tetrahedron(14) == 323.38",
+    "assert volume_tetrahedron(16) == 482.72",
+    "assert volume_tetrahedron(17) == 579.00",
+    "assert volume_tetrahedron(18) == 687.31",
+    "assert volume_tetrahedron(19) == 808.34",
+    "assert volume_tetrahedron(20) == 942.81",
+    "assert volume_tetrahedron(21) == 1091.42",
+    "assert volume_tetrahedron(22) == 1254.88",
+    "assert volume_tetrahedron(23) == 1433.89",
+    "assert volume_tetrahedron(24) == 1629.17",
+    "assert volume_tetrahedron(25) == 1841.42"
+  ],
+  "challenge_test_list": []
+}

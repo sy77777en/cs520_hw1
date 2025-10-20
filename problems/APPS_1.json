@@ -1,0 +1,19 @@
+{
+  "prompt": "\n\ndef show_me(name):\n    \"\"\"There's a new security company in Paris, and they decided to give their employees an algorithm to make first name recognition faster.\n\nIn France, you'll often find people with hyphenated first names ('prénoms composés'), such as Marie-Joelle, Jean-Michel, Jean-Mouloud.\nWords can only start with an uppercase letter followed by lowercase letters, and hyphen-linked parts are allowed.\nYour task: Implement show_me(name) to detect if the string is a valid French first name (single or hyphenated).\n    \"\"\"\n",
+  "canonical_solution": "import re\n\ndef show_me(name):\n    return bool(re.match(r'(-[A-Z][a-z]+)+$', '-' + name))",
+  "inputs": [
+    ["\"-Jean-Luc\""],
+    ["\"Meme Gertrude\""],
+    ["\"Jean-Eluard\""]
+  ],
+  "outputs": [
+    [false],
+    [false],
+    [true]
+  ],
+  "starter_code": "\ndef show_me(name):\n    ",
+  "scope": [
+    ["Function Body", 4, 5]
+  ],
+  "difficulty": "introductory"
+}

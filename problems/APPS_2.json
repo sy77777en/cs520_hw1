@@ -1,0 +1,28 @@
+{
+  "prompt": "\n\ndef MiSRf():\n    \"\"\"Kitahara Haruki has bought n apples for Touma Kazusa and Ogiso Setsuna. Now he wants to divide all the apples between the friends.\n\nEach apple weights 100 grams or 200 grams. Of course Kitahara Haruki doesn't want to offend any of his friend. Therefore the total weight of the apples given to Touma Kazusa must be equal to the total weight of the apples given to Ogiso Setsuna.\n\nBut unfortunately Kitahara Haruki doesn't have a knife right now, so he cannot split any apple into some parts. Please, tell him: is it possible to divide all the apples in a fair way between his friends?\n\n-----Input-----\nThe first line contains an integer n (1 ≤ n ≤ 100) — the number of apples. The second line contains n integers w_1, w_2, ..., w_{n} (w_{i} = 100 or w_{i} = 200), where w_{i} is the weight of the i-th apple.\n\n-----Output-----\nIn a single line print \"YES\" (without the quotes) if it is possible to divide all the apples between his friends. Otherwise print \"NO\" (without the quotes).\n\n-----Examples-----\nInput\n3\n100 200 100\n\nOutput\nYES\n\nInput\n4\n100 100 100 200\n\nOutput\nNO\n\n-----Note-----\nIn the first test sample Kitahara Haruki can give the first and the last apple to Ogiso Setsuna and the middle apple to Touma Kazusa.\n    \"\"\"\n",
+  "canonical_solution": "\n\ndef MiSRf():\n    \"\"\"\n    Codeforces Round 248 Div 2 Problem A\n    Author  : chaotic_iak\n    Language: Python 3.3.4\n    \"\"\"\n\n    class InputHandlerObject(object):\n        inputs = []\n\n        def getInput(self, n = 0):\n            res = \"\"\n            inputs = self.inputs\n            if not inputs:\n                inputs.extend(input().split(\" \"))\n            if n == 0:\n                res = inputs[:]\n                inputs[:] = []\n            while n > len(inputs):\n                inputs.extend(input().split(\" \"))\n            if n > 0:\n                res = inputs[:n]\n                inputs[:n] = []\n            return res\n\n    InputHandler = InputHandlerObject()\n    g = InputHandler.getInput\n\n    ############################## SOLUTION ##############################\n    n = int(input())\n    a = [int(x) for x in g()]\n    c100 = a.count(100)\n    if sum(a) % 200:\n        print(\"NO\")\n    elif n % 2 and not c100:\n        print(\"NO\")\n    else:\n        print(\"YES\")\n",
+  "inputs": [
+    "100\n200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 100 200 100 200 100 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200\n",
+    "99\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 200 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 200 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n",
+    "100\n100 100 200 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n"
+  ],
+  "outputs": [
+    "NO\n",
+    "NO\n",
+    "NO\n"
+  ],
+  "starter_code": "\ndef MiSRf():\n",
+  "scope": [
+    ["Function Body", 2, 38],
+    ["Class Body", 10, 25],
+    ["Function Body", 13, 25],
+    ["If Statement Body", 16, 16],
+    ["If Statement Body", 17, 19],
+    ["While Loop Body", 20, 21],
+    ["If Statement Body", 22, 24],
+    ["List Comprehension", 31, 31],
+    ["If Statement Body", 33, 38],
+    ["If Statement Body", 35, 38]
+  ],
+  "difficulty": "interview"
+}

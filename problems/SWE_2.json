@@ -1,0 +1,20 @@
+{
+  "repo": "pvlib/pvlib-python",
+  "instance_id": "pvlib__pvlib-python-1218",
+  "base_commit": "40ba4bd5c8b91754aa73e638ed984ab9657847cd",
+  "patch": "diff --git a/pvlib/modelchain.py b/pvlib/modelchain.py\n--- a/pvlib/modelchain.py\n+++ b/pvlib/modelchain.py\n@@ -977,7 +977,7 @@ def infer_temperature_model(self):...",
+  "test_patch": "diff --git a/pvlib/tests/test_modelchain.py b/pvlib/tests/test_modelchain.py\n--- a/pvlib/tests/test_modelchain.py\n+++ b/pvlib/tests/test_modelchain.py\n@@ -201,7 +201,7 @@ def pvwatts_dc_pvwatts_ac_faiman_temp_system():...",
+  "problem_statement": "change eta_m to module_efficiency...",
+  "hints_text": "I support this change.",
+  "created_at": "2021-05-06T16:02:38Z",
+  "version": "0.8",
+  "FAIL_TO_PASS": [
+    "pvlib/tests/test_modelchain.py::test_run_model_with_weather_noct_sam_temp",
+    "pvlib/tests/test_temperature.py::test_pvsyst_cell_eta_m_deprecated"
+  ],
+  "PASS_TO_PASS": [
+    "pvlib/tests/test_modelchain.py::test_ModelChain_creation",
+    "pvlib/tests/test_temperature.py::test_pvsyst_cell_default"
+  ],
+  "environment_setup_commit": "ef8ad2fee9840a77d14b0dfd17fc489dd85c9b91"
+}

@@ -1,0 +1,11 @@
+I need you to solve this Python programming problem. First create a plan, then implement it.
+
+Problem:
+[PASTE PROBLEM PROMPT HERE]
+
+Before writing code, create a plan:
+- What is the input/output?
+- What are the key steps?
+- What edge cases exist?
+
+Then write the implementation code only:

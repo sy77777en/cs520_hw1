@@ -1,0 +1,20 @@
+You are solving a Python programming problem. Write ONLY the complete function implementation (no explanations or markdown).
+
+Problem:
+Write a Python function to calculate the volume of a regular tetrahedron (a pyramid with four equilateral triangular faces).
+
+CRITICAL REQUIREMENTS:
+- The function name must be exactly: volume_tetrahedron
+- The function signature must be exactly:
+  def volume_tetrahedron(num):
+- The parameter `num` represents the side length of the tetrahedron.
+- The formula for the volume of a regular tetrahedron is:
+  V = (a³) / (6 * sqrt(2))
+- The result must be rounded to 2 decimal places.
+
+Examples:
+volume_tetrahedron(10) → 117.85  
+volume_tetrahedron(15) → 397.75  
+volume_tetrahedron(20) → 942.81
+
+Please provide the full Python function following this exact specification.

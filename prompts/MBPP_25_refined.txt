@@ -1,0 +1,20 @@
+You are solving a Python programming problem. Write ONLY the complete function implementation (no explanations or markdown).
+
+Problem:
+Write a Python function to find the product of all non-repeated (unique) elements in a given array.
+
+CRITICAL REQUIREMENTS:
+- The function name must be exactly: find_Product
+- The function signature must be exactly:
+  def find_Product(arr, n):
+- The parameter `arr` is a list of integers.
+- The parameter `n` is the length of the list `arr`.
+- Return the product of all elements that appear exactly once in `arr`.
+- If all elements are repeated (no unique elements), return 1.
+
+Examples:
+find_Product([1,1,2,3], 4) → 6  
+find_Product([1,2,3,1,1], 5) → 6  
+find_Product([1,1,4,5,6], 5) → 120
+
+Please provide the full, correct Python implementation matching the signature.

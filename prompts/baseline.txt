@@ -1,0 +1,6 @@
+I need you to solve this Python programming problem. Write ONLY the Python code without any explanations or markdown formatting.
+
+Problem:
+[PASTE PROBLEM PROMPT HERE]
+
+Provide the complete function implementation.

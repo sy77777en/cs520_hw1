@@ -1,0 +1,6 @@
+I need you to solve this Python programming problem. Write code and then verify it mentally.
+
+Problem:
+[PASTE PROBLEM PROMPT HERE]
+
+Write the code, then mentally test it with the provided examples to ensure correctness. Consider edge cases.

@@ -1,0 +1,12 @@
+I need you to solve this Python programming problem. Think step-by-step before writing code.
+
+Problem:
+[PASTE PROBLEM PROMPT HERE]
+
+Let's solve this step by step:
+1. First, understand what the function should do
+2. Think about edge cases
+3. Plan the algorithm
+4. Write the code
+
+Now provide your solution with only the Python code:
